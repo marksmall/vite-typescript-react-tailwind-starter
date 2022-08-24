@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app.component';
+
+import { ThemeProvider } from './theme/theme.context';
+
+import './i18n/i18n';
+
 import './index.css';
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider initialTheme="dark">
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
 );
 

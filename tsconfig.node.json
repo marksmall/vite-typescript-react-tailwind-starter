@@ -5,5 +5,5 @@
     "moduleResolution": "node",
     "types": ["vitest/globals"]
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "./src/setup-test-env.ts"]
 }
